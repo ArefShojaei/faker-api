@@ -14,4 +14,4 @@ app.use("/api", routes)
 app.use(notFoundRoute)
 
 // launch the app
-app.listen(APP_PORT, () => console.log("App is running..."))
+app.listen(APP_PORT || 3000, () => console.log("App is running..."))
