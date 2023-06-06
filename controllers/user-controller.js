@@ -14,7 +14,7 @@ module.exports = (req, res) => {
     try {
         return res.stauts(200).json({
             id : uuid(),
-            user_info = {
+            user_info : {
                 name : firstName(),
                 family : lastName(),
                 fullName : `${firstName()} ${lastName()}`,
